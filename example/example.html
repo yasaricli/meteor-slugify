@@ -1,0 +1,15 @@
+<head>
+  <title>example</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+  {{ slugify 'You ve pressed the button 0 times.' '-' }}
+</template>

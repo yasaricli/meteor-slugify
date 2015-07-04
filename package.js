@@ -11,8 +11,14 @@ Package.onUse(function(api, where) {
   // meteor @version
   api.versionsFrom('1.0.2.1');
 
+  // use official packages.
+  api.use(['underscore', 'templating']);
+
   // add file slugify and export
-  api.addFiles('slugify.js', where);
+  api.addFiles([
+    'chars.js',
+    'slugify.js'], where);
+
   api.export('slugify');
 });
 
