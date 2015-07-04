@@ -28,6 +28,6 @@ Package.onTest(function(api, where) {
   api.versionsFrom('1.0.2.1');
   api.use('underscore', where);
   api.use('tinytest', where);
-  api.use('yasaricli::slugify', where);
+  api.use('yasaricli:slugify', where);
   api.addFiles('tests.js', where);
 });
