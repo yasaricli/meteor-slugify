@@ -1,4 +1,3 @@
-
 Tinytest.add('Slugify - conversions', function(test) {
     var conversions = {
         ' a  b ': 'a-b',
